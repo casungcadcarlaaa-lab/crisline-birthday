@@ -127,7 +127,7 @@ function initScrollAnimations() {
 // COUNTDOWN TIMER
 // ========================================
 function initCountdown() {
-  const eventDate = new Date('December 6, 2026 00:00:00');
+  const eventDate = new Date('December 6, 2026 18:00:00');
 
   function update() {
     const now  = new Date();
