@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crisline's 18th Birthday Invitation 🌹</title>
+  <meta name="description" content="You are cordially invited to celebrate Crisline's 18th birthday on December 6, 2026. Join us for a night of roses, candles, and gifts!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Petals Background -->
+  <div class="petals-container" id="petalsContainer"></div>
+
+  <!-- Sparkles -->
+  <div class="sparkles-container" id="sparklesContainer"></div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge animate-fade-down">~ You Are Cordially Invited ~</div>
+      <h1 class="hero-name animate-fade-up">Crisline</h1>
+      <div class="hero-turns animate-fade-up delay-1">is turning</div>
+      <div class="hero-number animate-scale-in delay-2">18</div>
+      <p class="hero-subtitle animate-fade-up delay-3">A Simple Evening Celebration</p>
+      <div class="hero-date animate-fade-up delay-4">
+        <span class="date-icon">📅</span>
+        <span>December 6, 2026</span>
+      </div>
+      <div class="hero-time animate-fade-up delay-5">
+        <span class="date-icon">🕕</span>
+        <span>6:00 PM</span>
+      </div>
+      <a href="#roses" class="hero-cta animate-fade-up delay-5">
+        <span>Explore the Celebration</span>
+        <span class="cta-arrow">↓</span>
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ========== PHOTO GALLERY SECTION ========== -->
+  <section class="photo-section" id="photos">
+    <div class="section-header">
+      <div class="section-label">The Birthday Girl</div>
+      <h2 class="section-title">Crisline</h2>
+      <div class="divider"><span>🌸</span></div>
+      <p class="section-desc">A glimpse of the girl who lights up every room she enters.</p>
+    </div>
+    <div class="photo-grid">
+      <div class="photo-slot photo-main" id="photoSlot1">
+        <div class="photo-placeholder">
+          <div class="photo-icon">📷</div>
+          <p>Insert Photo Here</p>
+          <small>Replace with Crisline's Photo</small>
+        </div>
+        <input type="file" accept="image/*" class="photo-upload" onchange="loadPhoto(this, 'photoSlot1')" />
+        <div class="photo-label">Main Photo</div>
+      </div>
+      <div class="photo-slot" id="photoSlot2">
+        <div class="photo-placeholder">
+          <div class="photo-icon">📷</div>
+          <p>Insert Photo 2</p>
+        </div>
+        <input type="file" accept="image/*" class="photo-upload" onchange="loadPhoto(this, 'photoSlot2')" />
+        <div class="photo-label">Photo 2</div>
+      </div>
+      <div class="photo-slot" id="photoSlot3">
+        <div class="photo-placeholder">
+          <div class="photo-icon">📷</div>
+          <p>Insert Photo 3</p>
+        </div>
+        <input type="file" accept="image/*" class="photo-upload" onchange="loadPhoto(this, 'photoSlot3')" />
+        <div class="photo-label">Photo 3</div>
+      </div>
+      <div class="photo-slot" id="photoSlot4">
+        <div class="photo-placeholder">
+          <div class="photo-icon">📷</div>
+          <p>Insert Photo 4</p>
+        </div>
+        <input type="file" accept="image/*" class="photo-upload" onchange="loadPhoto(this, 'photoSlot4')" />
+        <div class="photo-label">Photo 4</div>
+      </div>
+      <div class="photo-slot" id="photoSlot5">
+        <div class="photo-placeholder">
+          <div class="photo-icon">📷</div>
+          <p>Insert Photo 5</p>
+        </div>
+        <input type="file" accept="image/*" class="photo-upload" onchange="loadPhoto(this, 'photoSlot5')" />
+        <div class="photo-label">Photo 5</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SAVE THE DATE / CALENDAR SECTION ========== -->
+  <section class="calendar-section" id="savethedate">
+    <div class="section-bg-deco"></div>
+    <div class="calendar-wrapper">
+      <div class="calendar-name">Crisline</div>
+      <div class="calendar-date-banner">December 6, 2026</div>
+      <table class="calendar-table">
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td class="calendar-highlight"><span class="cal-day">6</span><span class="cal-heart">♥</span></td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="calendar-butterflies">
+        <span class="butterfly butterfly-1">🦋</span>
+        <span class="butterfly butterfly-2">🦋</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 18 ROSES SECTION ========== -->
+  <section class="tribute-section roses-section" id="roses">
+    <div class="section-bg-deco"></div>
+    <div class="section-header">
+      <div class="section-label">For the Birthday Girl</div>
+      <h2 class="section-title">18 Roses</h2>
+      <div class="divider"><span>🌹</span></div>
+      <p class="section-desc">Each rose symbolizes a beautiful reason to celebrate Crisline</p>
+    </div>
+    <div class="tribute-grid">
+      <!-- 18 roses -->
+      <div class="tribute-card" data-index="1">
+        <div class="tribute-number">1</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Atanacio, Lance Eugene</strong></div>
+      </div>
+      <div class="tribute-card" data-index="2">
+        <div class="tribute-number">2</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Atanacio, Kirby</strong></div>
+      </div>
+      <div class="tribute-card" data-index="3">
+        <div class="tribute-number">3</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Enciso, Jonas</strong></div>
+      </div>
+      <div class="tribute-card" data-index="4">
+        <div class="tribute-number">4</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Arga, Gabriel</strong></div>
+      </div>
+      <div class="tribute-card" data-index="5">
+        <div class="tribute-number">5</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Baladia, John Paul</strong></div>
+      </div>
+      <div class="tribute-card" data-index="6">
+        <div class="tribute-number">6</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Gaditano, Jeremy</strong></div>
+      </div>
+      <div class="tribute-card" data-index="7">
+        <div class="tribute-number">7</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Oliquino, Jake Andrew</strong></div>
+      </div>
+      <div class="tribute-card" data-index="8">
+        <div class="tribute-number">8</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Godwyn Loyd</strong></div>
+      </div>
+      <div class="tribute-card" data-index="9">
+        <div class="tribute-number">9</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Avila, Jeremiah</strong></div>
+      </div>
+      <div class="tribute-card" data-index="10">
+        <div class="tribute-number">10</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Oliquino, Kylie</strong></div>
+      </div>
+      <div class="tribute-card" data-index="11">
+        <div class="tribute-number">11</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Molina, Jacent</strong></div>
+      </div>
+      <div class="tribute-card" data-index="12">
+        <div class="tribute-number">12</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Cledera, Emman</strong></div>
+      </div>
+      <div class="tribute-card" data-index="13">
+        <div class="tribute-number">13</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Barbero, Arlondon</strong></div>
+      </div>
+      <div class="tribute-card" data-index="14">
+        <div class="tribute-number">14</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Lagata, King Peter</strong></div>
+      </div>
+      <div class="tribute-card" data-index="15">
+        <div class="tribute-number">15</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Llanera, Mark Angelo</strong></div>
+      </div>
+      <div class="tribute-card" data-index="16">
+        <div class="tribute-number">16</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Casongcad, Aldin</strong></div>
+      </div>
+      <div class="tribute-card" data-index="17">
+        <div class="tribute-number">17</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Albert</strong></div>
+      </div>
+      <div class="tribute-card" data-index="18">
+        <div class="tribute-number">18</div>
+        <div class="tribute-emoji">🌹</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Aldwen</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 18 CANDLES SECTION ========== -->
+  <section class="tribute-section candles-section" id="candles">
+    <div class="section-bg-deco"></div>
+    <div class="section-header">
+      <div class="section-label">Make a Wish</div>
+      <h2 class="section-title">18 Candles</h2>
+      <div class="divider"><span>🕯️</span></div>
+      <p class="section-desc">Eighteen flames, eighteen wishes, eighteen blessings for Crisline</p>
+    </div>
+    <div class="tribute-grid candles-grid">
+      <div class="tribute-card candle-card" data-index="1">
+        <div class="tribute-number">1</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Barbie</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="2">
+        <div class="tribute-number">2</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Skye</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="3">
+        <div class="tribute-number">3</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Casucgcad, Catelyn</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="4">
+        <div class="tribute-number">4</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Arienne</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="5">
+        <div class="tribute-number">5</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Atanacio, Mika</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="6">
+        <div class="tribute-number">6</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Lopiga, Kimberly</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="7">
+        <div class="tribute-number">7</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Llanera, Angelie</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="8">
+        <div class="tribute-number">8</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Jaula, Lyka</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="9">
+        <div class="tribute-number">9</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Carla</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="10">
+        <div class="tribute-number">10</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Sumayaw, Ella Mae</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="11">
+        <div class="tribute-number">11</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Jessa Mae</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="12">
+        <div class="tribute-number">12</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Montezor, Dave</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="13">
+        <div class="tribute-number">13</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Estefani, Vincent</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="14">
+        <div class="tribute-number">14</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Zymon</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="15">
+        <div class="tribute-number">15</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Nicol, John Lucas</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="16">
+        <div class="tribute-number">16</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Gwyneth</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="17">
+        <div class="tribute-number">17</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Cherryl</strong></div>
+      </div>
+      <div class="tribute-card candle-card" data-index="18">
+        <div class="tribute-number">18</div>
+        <div class="tribute-emoji candle-flame">🕯️</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Cindy</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 18 GIFTS SECTION ========== -->
+  <section class="tribute-section gifts-section" id="gifts">
+    <div class="section-bg-deco"></div>
+    <div class="section-header">
+      <div class="section-label">With All Our Love</div>
+      <h2 class="section-title">18 Gifts</h2>
+      <div class="divider"><span>🎁</span></div>
+      <p class="section-desc">Eighteen tokens of love and affection for our dearest Crisline</p>
+    </div>
+    <div class="tribute-grid gifts-grid">
+      <div class="tribute-card gift-card" data-index="1">
+        <div class="tribute-number">1</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Intia, Faith</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="2">
+        <div class="tribute-number">2</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Alto, Micaella</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="3">
+        <div class="tribute-number">3</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Diwata, Krisha</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="4">
+        <div class="tribute-number">4</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Aspe, Mariel</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="5">
+        <div class="tribute-number">5</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Daiz, Marian</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="6">
+        <div class="tribute-number">6</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Quintos, Ma. Reliaza</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="7">
+        <div class="tribute-number">7</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Talaguit, Keziah</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="8">
+        <div class="tribute-number">8</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Daiz, Eulla</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="9">
+        <div class="tribute-number">9</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Princess</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="10">
+        <div class="tribute-number">10</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Cepriaso, Divine Grace</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="11">
+        <div class="tribute-number">11</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Flores, Yana</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="12">
+        <div class="tribute-number">12</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Avila, Joyce Ann</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="13">
+        <div class="tribute-number">13</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Anacin, Alea</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="14">
+        <div class="tribute-number">14</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Tapales, Stella</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="15">
+        <div class="tribute-number">15</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Delamerced, Angel</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="16">
+        <div class="tribute-number">16</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Mhelody</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="17">
+        <div class="tribute-number">17</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Casungcad, Rosalie</strong></div>
+      </div>
+      <div class="tribute-card gift-card" data-index="18">
+        <div class="tribute-number">18</div>
+        <div class="tribute-emoji">🎁</div>
+        <div class="tribute-text"><strong class="person-name">Lopiga, Kimberly</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COUNTDOWN SECTION ========== -->
+  <section class="countdown-section" id="countdown">
+    <div class="countdown-overlay"></div>
+    <div class="countdown-content">
+      <div class="section-label" style="color: rgba(255,255,255,0.8)">Counting Down To</div>
+      <h2 class="countdown-title">December 6, 2026</h2>
+      <div class="countdown-timer">
+        <div class="countdown-unit" id="days-unit">
+          <div class="countdown-number" id="days">00</div>
+          <div class="countdown-label">Days</div>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit" id="hours-unit">
+          <div class="countdown-number" id="hours">00</div>
+          <div class="countdown-label">Hours</div>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit" id="minutes-unit">
+          <div class="countdown-number" id="minutes">00</div>
+          <div class="countdown-label">Minutes</div>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-unit" id="seconds-unit">
+          <div class="countdown-number" id="seconds">00</div>
+          <div class="countdown-label">Seconds</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-deco">🌹 🕯️ 🎁</div>
+    <div class="footer-script">Happy 18th Birthday</div>
+    <div class="footer-name">Crisline</div>
+    <p class="footer-msg">With all our love, today and always 💕</p>
+    <div class="footer-date">December 6, 2026</div>
+    <div class="footer-deco">✨ 🌸 ✨</div>
+  </footer>
+
+  <!-- ========== MUSIC PLAYER ========== -->
+  <div class="music-player" id="musicPlayer">
+    <div class="music-hint" id="musicHint">🎵 Tap to play music</div>
+    <button class="music-btn" id="musicBtn" onclick="toggleMusic()" title="Play / Pause Music">
+      <span class="music-icon" id="musicIcon">▶</span>
+      <span class="music-label">Music</span>
+    </button>
+    <div class="music-note" id="musicNote">♪</div>
+  </div>
+  <!-- Background Music (HTML5 Audio) -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="AudioTranscriberAI_Disney's Cinderella - La Valse de L'Amour(Score).mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
